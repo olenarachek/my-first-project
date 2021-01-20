@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+#text-left {
+padding-top: 15%;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+#text-left {
+padding-top: 25%;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+#text-left {
+padding-top: 30%;
+}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+#text-left {
+padding-top: 35%;
+}
+}
+
 :root {
     max-width: 1400px;
     margin: 0;
@@ -183,25 +215,22 @@ h2 {
     font-family: Rubik, sans-serif;
     font-size: 16px;
 }
-section .destination {
+section .route {
 background: url("../img/blackground.png") no-repeat center / cover;
 background-attachment: scroll;
 background-position: 0px 0px;
 height: 100%;
 width: 100%;
-line-height: 1;
 font-family: 'Rubik', sans-serif;
 margin: 0 auto;
 padding-top: 24px;
 padding-bottom: 24px;
 padding-left: 32px;
 padding-right: 32px;
-align-items: center;
-justify-content: space-between;
 }
 
 #destinations {
-    color: white;
+    color: black;
 }
 .grid-item2 { grid-area: girrafe; }
 .grid-item3 { grid-area: africa; }
@@ -215,12 +244,14 @@ justify-content: space-between;
 .grid-container2 {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto 200px;
     grid-template-areas: 'girrafe africa'
     'namibia mountain'
     'bufallo botsvana'
     'button button';
+    background-color: white;
     background-position: 0px 0px;
+    border: 0px transparent;
     height: 100%;
     width: 100%;
     padding-top: 24px;
@@ -231,6 +262,50 @@ justify-content: space-between;
     background-attachment: scroll;
 }
 .grid-item2 {
+    border: none;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+}
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    background-position: 0px 0px;
+    height: 100%;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    position: relative;
+    background-attachment: scroll;
+}
+.grid-item9 {
+    border: 20px solid white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+}
+.grid-container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: white;
+    background-position: 0px 0px;
+    height: 100%;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    position: relative;
+    background-attachment: scroll;
+}
+.grid-item10 {
     border: 20px solid white;
     padding: 20px;
     font-size: 30px;
@@ -239,4 +314,132 @@ justify-content: space-between;
     font-size: 16px;
 }
 
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
+    P.blocktext {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-container5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    background-position: 0px 0px;
+    height: 100%;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    position: relative;
+    background-attachment: scroll;
+}
+.grid-item11 {
+    border: 20px solid white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+}
+.round {
+    border-radius: 100px; 
+   }
+
+.grid-container6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: white;
+    background-position: 0px 0px;
+    height: 100%;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    position: relative;
+    background-attachment: scroll;
+}
+.grid-item12 {
+    border: 20px solid white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+}
+.grid-container7 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: white;
+  background-position: 0px 0px;
+  height: 100%;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+  position: relative;   
+  background-attachment: scroll;
+
+}
+.grid-item13 {
+  background-color: rgb(247, 199, 2);
+  border: 20px solid white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+
+}
+.grid-container8 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: white;
+  background-position: 0px 0px;
+  height: 100%;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+  position: relative;   
+  background-attachment: scroll;
+
+}
+.grid-item14 {
+  border: 20px solid white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+}
+
+#form_message{
+    display: flexbox;
+    align-items: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 5px;
+	margin:10px;
+	padding: 10px;
+	width: 320px;
+    height:330px;
+
+}
+
+#form_message input,textarea{
+	border-radius: 5px;
+    width: 170px;
+    
+}
+
+#submit{
+	height: 50px;
+	float: center;
+}
