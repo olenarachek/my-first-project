@@ -15,33 +15,33 @@
 <body>
     <header id="home">
         <div class="content">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-                <a class="navbar-brand" href="#">Terra Incognita</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#safari">Сафарі<span class="sr-only"></span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#destinations">Туристичні маршрути</a>
-                        </li>
-                        <a class="nav-link" href="#expeditions">Незвідані простори</a>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutus">Про нас</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog">Блог</a>
-                        </li>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent d-flex">
+                <div class="container-fluid">
+                    <a class="navbar-left" href="#">Terra Incognita</a>
+                    <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#safari">Сафарі<span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#destinations">Туристичні маршрути</a>
+                            </li>
+                            <a class="nav-link" href="#expeditions">Незвідані простори</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aboutus">Про нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">Блог</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-        </div>
-        </div>
-        </nav>
+            </nav>
         </div>
         <div class="banner">
             <h1>Поринь у незвіданний світ дикої природи</h1>
@@ -76,7 +76,7 @@
         <section>
             <h2 id="safari">Наші найпопулярніші сафарі-тури</h2>
             <div class="product-list">
-            <div class="grid-container1">
+                <div class="grid-container1">
                     <div class="grid-item1">
                         <article class="product-card">
                             <h3>Дивовижне сафарі</h3>
@@ -87,19 +87,18 @@
                                 <button>Замовити</button>
                             </div>
                     </div>
-                        </article>
-                        <div class="grid-item1">
+                    </article>
+                    <div class="grid-item1">
                         <article class="product-card">
                             <h3>Класичне сафарі</h3>
                             <p>Насолоджуйтесь найкращими видами дикої природи на нашому 3-денному Класичному сафарі турі
-                                до
-                                національного парку Хванге.</p>
+                                до національного парку Хванге.</p>
                             <div class="buttons">
                                 <button>Замовити</button>
                             </div>
                     </div>
-                        </article>
-                        <div class="grid-item1">
+                    </article>
+                    <div class="grid-item1">
                         <article class="product-card">
                             <h3>Незвідане сафарі</h3>
                             <p>На чолі з професійними гідами ви проведете свої вихідні у пошуках "Великої п'ятірки" та
@@ -108,8 +107,8 @@
                                 <button>Замовити</button>
                             </div>
                     </div>
-                        </article>
-                         <div class="grid-item1">
+                    </article>
+                    <div class="grid-item1">
                         <article class="product-card">
                             <h3>Елітне сафарі</h3>
                             <p>Відкрийте для себе найрізноманітніших тварини в 6-денній подорожі тропічними лісами
@@ -119,59 +118,99 @@
                                 <button>Замовити</button>
                             </div>
                     </div>
-                </article>
+                    </article>
                 </div>
             </div>
         </section>
         <section class="destination">
             <h2 id="destinations">Туристичні маршрути</h2>
             <div class="description">
-                <article class="destination">
-                    <h3>Південна Африка</h3>
-                    <p>Неможливо перевершити різноманітність та вражаючу красу дикої природи, культури та ландшафтів
-                        Південної Африки. Ландшафти, що варіюються від безмежних таємничих рівнин Кару до великих озер
-                        Сент-Люсії, незаймана природа савани Національного парку Крюгера з різноманітною дивовижною
-                        флорою і фауною.</p>
-                    <img src="img/giraffe.png" class="rounded float-right" alt="girrafe">
-                    <div class="buttons">
-                        <button>Більше</button>
+                <div class="grid-container2">
+                    <div class="grid-item2">
+                        <article class="destination">
+                            <img src="img/giraffe.png" width="730" height="401.5" alt="giraffe" class="cover">
                     </div>
-                </article>
-                <article class="destination">
-                    <h3>Намібія</h3>
-                    <p>Намібія - це омріяне туристичне місце. Відкрийте для себе захоплюючу красу Намібії, найстарішої
-                        пустелі на планеті. Відвідайте Національний парк Етоша, один з найбільших заповідників у світі.
-                        Дослідіть вражаючі піщані дюни Соссуслей або відвідайте місцеве плем’я Хімба. Слова не можуть
-                        описати унікальну красу, яку ви можете відчути під час свого туру по Намібії.</p>
-                    <img src="img/mountain.png" alt="mountain">
-                    <div class="buttons">
-                        <button>Більше</button>
+                    <div class="grid-item3">
+                        <h3>Південна Африка</h3>
+                        <p>Неможливо перевершити різноманітність та вражаючу красу дикої природи, культури та ландшафтів
+                            Південної Африки. Ландшафти, що варіюються від безмежних таємничих рівнин Кару до великих
+                            озер
+                            Сент-Люсії, незаймана природа савани Національного парку Крюгера з різноманітною дивовижною
+                            флорою і фауною.</p>
+                        <div class="buttons">
+                            <button>Більше</button>
+                        </div>
                     </div>
-                </article>
-                <article class="destination">
+                    </article>
+                    <div class="grid-item4">
+                        <article class="destination">
+                            <h3>Намібія</h3>
+                            <p>Намібія - це омріяне туристичне місце. Відкрийте для себе захоплюючу красу Намібії,
+                                найстарішої
+                                пустелі на планеті. Відвідайте Національний парк Етоша, один з найбільших заповідників у
+                                світі.
+                                Дослідіть вражаючі піщані дюни Соссуслей або відвідайте місцеве плем’я Хімба. Слова не
+                                можуть
+                                описати унікальну красу, яку ви можете відчути під час свого туру по Намібії.</p>
+                    </div>
+                    <div class="grid-item5">
+                        <img src="img/mountain.png" width="730" height="401.5" alt="mountain" class="cover">
+                        <div class="buttons">
+                            <button>Більше</button>
+                        </div>
+                    </div>
+                    </article>
+                    <div class="grid-item6">
+                        <article class="destination">
+                            <img src="img/buffalo.png" width="730" height="401.5" alt="bufallo" class="cover">
+                    </div>
+                                        <div class="grid-item7">
                     <h3>Ботсвана</h3>
                     <p>Ботсвана - це справді витвір мистецтва, зроблений природою. Дивовижна дельта Окаванго створює
                         живий рай на Землі з її винятковою екосистемою. Насолоджуйтесь різноманітними краєвидами в
                         Національному парку Чобе, у якому найбільше скупчення дикої природи в Африці. Побачте на власні
                         очі стада слонів та інших тварин, які зроблять ваше сафарі незабутнім.</p>
-                    <img src="img/buffalo.png" alt="bufallo">
                     <div class="buttons">
                         <button>Більше</button>
                     </div>
-                    <div class="buttons">
-                        <button>Переглянути всі напрямки</button>
-                    </div>
+                </div>
+             <div class="grid-item8">
+                <div class="buttons">
+                    <button>Переглянути всі напрямки</button>
+                </div>
+             </div>
                 </article>
+            </div>
             </div>
         </section>
         <section>
             <p>ВІД КЕЙПТАУНУ ДО ВОДОСПАДУ ВІКТОРІЯ - ВЕЛИКА АФРИКАНСЬКА ЕКСПЕДИЦІЯ</p>
             <button>Зв'язатися з експертом</button>
             <h2>Галерея</h2>
-            <img src="img/lion.png" alt="lion">
-            <img src="img/buffalos.png" alt="buffalos">
-            <img src="img/elephant.png" alt="elephant">
-            <img src="img/monkey.png" alt="monkey">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/lion.png" class="d-block w-100" alt="lion">
+    </div>
+    <div class="carousel-item">
+      <img src="img/buffalos.png" class="d-block w-100" alt="buffalos">
+    </div>
+    <div class="carousel-item">
+      <img src="img/elephant.png" class="d-block w-100" alt="elephant">
+    </div>
+        <div class="carousel-item">
+      <img src="img/monkey.png" class="d-block w-100" alt="monkey">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
         </section>
         <section>
             <h2 id="comments">Відгуки</h2>
