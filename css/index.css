@@ -6,30 +6,22 @@
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
-#text-left {
-padding-top: 15%;
-}
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-#text-left {
-padding-top: 25%;
-}
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-#text-left {
-padding-top: 30%;
-}
+
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-#text-left {
-padding-top: 35%;
-}
+
 }
 
 :root {
@@ -82,6 +74,10 @@ justify-content: space-between;
     text-decoration: none; 
 }
 
+.navbar-left: :hover {
+    text-decoration: none; 
+}
+
 #navbarNav {
     max-width: 100%;
     position: relative;
@@ -98,7 +94,7 @@ justify-content: space-between;
     text-transform: uppercase;
     text-align: center;
 }
-.navbar .navbar-nav > .active > a:hover {
+#navbar-nav:hover {
 color: #f7c702;
 }
 
@@ -115,22 +111,33 @@ header .banner h1 {
 }
 
 a.button {
+ display: inline-block;
+ position: absolute;
   color:white; 
   text-decoration: none; 
   user-select: none; 
-  background: transparent;
-  padding: .7em 1.5em; 
+  background: transparent; 
   outline: none;
   border-radius: 32px;
   padding-left: 32px;
+  padding-top: 20px;
+  padding-right: 32px;
+  padding-bottom: 20px;
   font-size: 16px;
   font-family: 'Rubik', sans-serif;
   height: 59px;
   width: 253.016px;
+  background: url('../img/envelope.svg') no-repeat left center;
+  background-size: 24px 24px;
+  background-origin: padding-box;
+  letter-spacing: .071em;
+  text-align: center;
+  margin:5px;
 } 
 
 a.button:hover { 
-    background: white;
+    background: white url('../img/envelope.svg') no-repeat left center;
+    background-size: 24px 24px;
     color: black; 
 }
 .navbar-collapse {
