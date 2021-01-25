@@ -57,18 +57,18 @@
         <section class="we">
             <h2>Чому саме ми?</h2>
             <div class="grid-container">
-                <div class="grid-item"><img src="img/map.svg"><b>Обслуговування, якого ти потребуєш</b>
+                <div class="grid-item"><img src="img/map.svg" width="100" height="100" alt="map"><br><b>Обслуговування, якого ти потребуєш</b>
                     <p>Ми пропонуємо індивідуальні тури до Африки, щоб залишити незабутні спогади Вам та Вашим друзям.
                     </p>
                 </div>
-                <div class="grid-item"><img src="img/people.svg"><b>Висококваліфікований персонал</b>
+                <div class="grid-item"><img src="img/people.svg" width="100" height="100" alt="people"><br><b>Висококваліфікований персонал</b>
                     <p>Всі наші гіди мають ліцензію та страхування на проведення екскурсій у своїй країні.</p>
                 </div>
-                <div class="grid-item"><img src="img/ok.svg"><b>Соціальна відповідальність</b>
+                <div class="grid-item"><img src="img/ok.svg" width="100" height="100" alt="ok"><br><b>Соціальна відповідальність</b>
                     <p>Всі наші гіди несуть відповідальність за відвідини обраної території та людей, які знаходяться
                         поряд з ними.</p>
                 </div>
-                <div class="grid-item"><img src="img/shield.svg"><b>Страхування</b>
+                <div class="grid-item"><img src="img/shield.svg" width="100" height="100" alt="shield"><br><b>Страхування</b>
                     <p>Ми надаємо ліцензію ATOL та міжнародний захист пасажирів для кожної
                         поїздки.</p>
                 </div>
@@ -183,34 +183,24 @@
             </div>
             </div>
         </section>
-        <section>
+        <section class="information">
             <p>ВІД КЕЙПТАУНУ ДО ВОДОСПАДУ ВІКТОРІЯ - ВЕЛИКА АФРИКАНСЬКА ЕКСПЕДИЦІЯ</p>
             <button>Зв'язатися з експертом</button>
+        </section>
+            <section class="gallary">
             <h2>Галерея</h2>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/lion.png" class="d-block w-100" alt="lion">
-    </div>
-    <div class="carousel-item">
-      <img src="img/buffalos.png" class="d-block w-100" alt="buffalos">
-    </div>
-    <div class="carousel-item">
-      <img src="img/elephant.png" class="d-block w-100" alt="elephant">
-    </div>
-        <div class="carousel-item">
-      <img src="img/monkey.png" class="d-block w-100" alt="monkey">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </a>
-</div>
+          <div class="caurosel">
+              <div class="item">
+              <img src="img/lion.png" alt="1"></div>
+         <div class="item">
+             <img src="img/buffalos.png" alt="2"></div>
+         <div class="item">
+             <img src="img/elephant.png" alt="3"></div>
+         <div class="item">
+             <img src="img/monkey.png" alt="4"></div>
+     <a class="previous" onclick="previousSlide()"><img src="img/leftarrow.png" width="19" height="31" alt="left"></a>
+  <a class="next" onclick="nextSlide()"><img src="img/rightarrow.png" width="19" height="31" alt="right"></a>
+ </div>
         </section>
         <section class="reviews">
             <h2 id="comments">Відгуки</h2>
@@ -234,7 +224,9 @@
                         <p><b>Елізабет Шварцман</b></p>
                         <p>Менеджер по роботі з клієнтами</p>
                 </div>
+                <div class="grid-item9">
             <button>Більше відгуків</button>
+            </div>
         </section>
         <section>
             <h2 id="expeditions">Незвідані простори</h2>
@@ -407,6 +399,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+        <script src="js/carousel.js"></script>
 </body>
 
 </html>

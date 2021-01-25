@@ -1,61 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@media only screen and (min-width : 320px) {
-body {
-    display:block;
-    height: 100%;
-    margin: auto;
-    padding: auto;
-    box-sizing: border-box;
-}
-
-}
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
-    body {
-    display:none;
-    height: 100%;
-    margin: auto;
-    padding: auto;
-    box-sizing: border-box;
-}
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-body {
-    display:none;
-    height: 100%;
-    margin: auto;
-    padding: auto;
-    box-sizing: border-box;
-}
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-body {
-    display:block;
-    height: 100%;
-    margin: auto;
-    padding: auto;
-    box-sizing: border-box;
-}
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-body {
-    display:block;
-    height: 100%;
-    margin: auto;
-    padding: auto;
-    box-sizing: border-box;
-}
-}
 
 :root {
     max-width: 1400px;
@@ -66,10 +10,12 @@ body {
 html, body {
     display:block;
     box-sizing: border-box;
+    max-width: 1400px;
     height: 100%;
     margin: 0;
 }
 
+@media (min-width: 320px) {
 header {
 background: url("../img/elephant.png") no-repeat center / cover rgba(0, 0, 0, 0.47);
 background-blend-mode: color-dodge;
@@ -87,9 +33,11 @@ padding-bottom: 140px;
 padding-left: 32px;
 padding-right: 32px;
 align-items: center;
-justify-content: space-between;
+justify-content: space-around;
+}
 }
 
+@media (min-width : 320px) {
 .navbar-left {
     max-width: 100%;
     position: relative;
@@ -127,6 +75,7 @@ justify-content: space-between;
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
+}
 }
 #navbar-nav:hover {
 color: #f7c702;
@@ -178,8 +127,8 @@ a.button:hover {
     color: white;
 }
 
-section .we {
-background: grey no-repeat center / cover;
+main .we {
+background:#fff no-repeat center / cover;
 background-attachment: scroll;
 background-position: 0px 0px;
 height: 100%;
@@ -191,6 +140,7 @@ padding-bottom: 24px;
 padding-left: 32px;
 padding-right: 32px;
 }
+
 
 h2 {
     text-align: center;
@@ -226,16 +176,16 @@ h2 {
   font-size: 16px;
 
 }
+
 .product-card {
     background-color: #3a3031;
     display: grid;
     grid-template-columns: repeat(1fr 1fr 1fr 1fr);
-    grid-column: 1/4;
     justify-content: center;
     color: white;
     border: 20px solid white;
     box-sizing: border-box;
-    border-radius: 40px;
+    border-radius: 35px;
     text-align: center;
     font-family: Rubik, sans-serif;
     background-position: 0px 0px 0px 0px;
@@ -272,7 +222,7 @@ h2 {
     font-family: Rubik, sans-serif;
     font-size: 16px;
 }
-section .route {
+main .route {
 background: url("../img/blackground.png") no-repeat center / cover;
 background-attachment: scroll;
 background-position: 0px 0px;
@@ -284,10 +234,11 @@ padding-top: 24px;
 padding-bottom: 24px;
 padding-left: 32px;
 padding-right: 32px;
+box-sizing: content-box;
 }
 
 #destinations {
-    color: black;
+    color: white;
 }
 .grid-item2 { grid-area: girrafe; }
 .grid-item3 { grid-area: africa; }
@@ -306,30 +257,163 @@ padding-right: 32px;
     'namibia mountain'
     'bufallo botsvana'
     'button button';
-    background-color: white;
     background-position: 0px 0px;
     border: 0px transparent;
     height: 100%;
-    width: 100%;
     padding-top: 24px;
     padding-bottom: 24px;
     padding-left: 32px;
     padding-right: 32px;
     position: relative;
     background-attachment: scroll;
+    justify-content: first baseline;
 }
 .grid-item2 {
+    background-color: white;
     border: none;
-    padding: 20px;
-    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
     text-align: center;
     font-family: Rubik, sans-serif;
     font-size: 16px;
 }
+    
+.grid-item3 {
+ background-color: white;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+}
+
+.grid-item4 {
+    background-color: white;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+}
+.grid-item5 {
+    background-color: white;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+}
+.grid-item6 {
+    background-color: white;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+}
+.grid-item7 {
+    background-color: white;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+}
+.grid-item8 {
+    background-color: url("../img/blackground.png") no-repeat center / cover;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+}
+
+main .information {
+background: url("../img/yellowground.png") no-repeat center / cover;
+background-attachment: scroll;
+background-position: bottom center;
+height: 100%;
+width: 100%;
+font-family: 'Rubik', sans-serif;
+margin: 0 auto;
+padding-top: 24px;
+padding-bottom: 24px;
+padding-left: 32px;
+padding-right: 32px;
+}
+
+main .gallary {
+background: white no-repeat center / cover;
+background-attachment: scroll;
+background-position: bottom center;
+height: 100%;
+width: 100%;
+font-family: 'Rubik', sans-serif;
+margin: 0 auto;
+padding-top: 24px;
+padding-bottom: 24px;
+padding-left: 32px;
+padding-right: 32px;
+}
+.caurosel{
+    max-width: 90%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+.caurosel .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.caurosel .previous, .caurosel .next {
+position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    padding: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.caurosel .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+main .reviews {
+background: url("../img/smoke.png") no-repeat center / cover;
+background-attachment: scroll;
+background-position: bottom center;
+height: 100%;
+width: 100%;
+font-family: 'Rubik', sans-serif;
+margin: 0 auto;
+padding-top: 24px;
+padding-bottom: 24px;
+padding-left: 32px;
+padding-right: 32px;
+}
+
 .grid-container3 {
     display: grid;
+    background-color: url("../img/smoke.png") no-repeat center / cover;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: white;
+    grid-template-rows: auto;
+    box-sizing: border-box;
     background-position: 0px 0px;
     height: 100%;
     width: 100%;
@@ -341,7 +425,8 @@ padding-right: 32px;
     background-attachment: scroll;
 }
 .grid-item9 {
-    border: 20px solid white;
+    background-color: white;
+    border: none;
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -499,4 +584,61 @@ IMG.displayed {
 #submit{
 	height: 50px;
 	float: center;
+}
+
+@media (min-width: 480px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 980px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 480px) {
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 480px) {
+    .grid-container1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 980px) {
+    .grid-container1 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 480px) {
+    .grid-container2 {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+    }
+}
+
+@media (min-width: 660px) {
+    .grid-container2 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 980px) {
+    .grid-container2 {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
