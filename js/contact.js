@@ -19,12 +19,6 @@ function showSuccess(input) {
 
 // Check phone is valid
 function checkPhone(input) {
-  const re = /(?<!\w)(?:(?:(?:(?:\+?3)?8\W{0,5})?0\W{0,5})?[34569]\s?\d[^\w,;(\+]{0,5})?\d\W{0,5}\d\W{0,5}\d\W{0,5}\d\W{0,5}\d\W{0,5}\d\W{0,5}\d(?!(\W?\d))/x;
-  if (re.test(input.value.trim())) {
-    showSuccess(input);
-  } else {
-    showError(input, "Невірно введений номер");
-  }
 }
 
 // Check email is valid
