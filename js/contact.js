@@ -19,6 +19,12 @@ function showSuccess(input) {
 
 // Check phone is valid
 function checkPhone(input) {
+    const re = /^\+380\d{3}\d{2}\d{2}\d{2}$/;
+    if (re.test(input.value.trim())) {
+    showSuccess(input);
+  } else {
+    showError(input, "Невірно введений email");
+  }
 }
 
 // Check email is valid

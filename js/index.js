@@ -1,35 +1,40 @@
-let count = 3;
+const images = [
+    'lion.png',
+    'buffalos.png',
+    'elephant.png',
+    'monkey.png'
+];
 
-let slideIndex = 1;
+let currImgIdx = 0;
 
-showSlides(slideIndex);
-
-function nextSlide() {
-    showSlides(slideIndex += 1);
+function showCurrentImage() {
+    const imgContainer1 = document.querySelector('.carousel .current-image-1');
+    imgContainer1.src = 'img/' + images[currImgIdx];
+    const imgContainer2 = document.querySelector('.carousel .current-image-2');
+    image2Idx = currImgIdx + 1 > images.length -1 ? currImgIdx - (images.length - 1) : currImgIdx + 1;
+    imgContainer2.src = 'img/' + images[image2Idx];
+    const imgContainer3 = document.querySelector('.carousel .current-image-3');
+    image3Idx = currImgIdx + 2 > images.length -1 ? (currImgIdx + 1) - (images.length - 1) : currImgIdx + 2;
+    imgContainer3.src = 'img/' + images[image3Idx];
 }
-function previousSlide() {
-    showSlides(slideIndex -= 1);  
-}
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+
+showCurrentImage();
+
+const nextButton = document.querySelector('.carousel .next');
+nextButton.addEventListener('click', nextButtonClicked);
+function nextButtonClicked() {
+    currImgIdx++;
+    if (currImgIdx >= images.length) currImgIdx = 0;
+    showCurrentImage();
 }
 
-function showSlides(n) {
-
-    let slides = document.getElementsByClassName("item");
-    
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-  
-    for (let slide of slides) {
-        slide.style.display = "none";
-    }
-
-    slides[slideIndex - 1].style.display = "block";    
+const prevButton = document.querySelector('.carousel .prev');
+prevButton.addEventListener('click', prevButtonClicked);
+function prevButtonClicked() {
+    currImgIdx--;
+    if (currImgIdx < 0) currImgIdx = images.length - 1;
+    showCurrentImage();
 }
+
 
 
