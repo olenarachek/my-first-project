@@ -7,7 +7,7 @@
     border: 0;
 }
 
-html, body {
+body {
     display:block;
     box-sizing: border-box;
     max-width: 1400px;
@@ -94,7 +94,7 @@ header .banner h1 {
 
 a.button {
  display: inline-block;
- position: absolute;
+ position: relative;
   color:white; 
   text-decoration: none; 
   user-select: none; 
@@ -112,7 +112,7 @@ a.button {
   background: url('../img/envelope.svg') no-repeat left center;
   background-size: 24px 24px;
   background-origin: padding-box;
-  letter-spacing: .071em;
+  letter-spacing: 1.136px;
   text-align: center;
   margin:5px;
 } 
@@ -220,6 +220,20 @@ h2 {
     text-align: center;
     font-family: Rubik, sans-serif;
     font-size: 16px;
+}
+.product-card .buttons {
+    position: relative;
+  background-color: #f7c702;
+  height: 14px;
+  width: 75.6406px;
+  padding: 0px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 32px;
+  font-size: 12px;  
 }
 main .route {
 background: url("../img/blackground.png") no-repeat center / cover;
