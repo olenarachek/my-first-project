@@ -222,19 +222,31 @@ h2 {
     font-size: 16px;
 }
 .product-card .buttons {
-    position: relative;
+ display: flex;	
+ justify-content: center;
+ position: relative;
   background-color: #f7c702;
-  height: 14px;
-  width: 75.6406px;
+  max-width: 100%;
+  height: 35px;
   padding: 0px;
+  margin: 0px;
   border: none;
   color: white;
+  align-items: center;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  text-transform: uppercase;
   border-radius: 32px;
-  font-size: 12px;  
+  font-size: 12px; 
+  font-weight: 600; 
+  letter-spacing: 0.852px;
 }
+
+.product-card .buttons:hover {
+    background-color: white;
+    color: black;
+}
+
 main .route {
 background: url("../img/blackground.png") no-repeat center / cover;
 background-attachment: scroll;
@@ -243,14 +255,19 @@ height: 100%;
 width: 100%;
 font-family: 'Rubik', sans-serif;
 margin: 0 auto;
-padding-top: 24px;
-padding-bottom: 24px;
+padding-top: 105px;
+padding-bottom: 95px;
 padding-left: 32px;
 padding-right: 32px;
 box-sizing: content-box;
 }
 
 #destinations {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     color: white;
 }
 .grid-item2 { grid-area: girrafe; }
@@ -284,7 +301,6 @@ box-sizing: content-box;
 .grid-item2 {
     background-color: white;
     border: none;
-    padding: 0px;
     margin: 0px;
     text-align: center;
     font-family: Rubik, sans-serif;
@@ -294,21 +310,21 @@ box-sizing: content-box;
 .grid-item3 {
  background-color: white;
     border: none;
-    padding: 0px;
+    padding: 30px;
     margin: 0px;
-    text-align: center;
     font-family: Rubik, sans-serif;
     font-size: 16px;
+    text-align: center;
 }
 
 .grid-item4 {
-    background-color: white;
+     background-color: white;
     border: none;
-    padding: 0px;
+    padding: 30px;
     margin: 0px;
-    text-align: center;
     font-family: Rubik, sans-serif;
     font-size: 16px;
+    text-align: center;
 }
 .grid-item5 {
     background-color: white;
@@ -322,29 +338,123 @@ box-sizing: content-box;
 .grid-item6 {
     background-color: white;
     border: none;
-    padding: 0px;
     margin: 0px;
     text-align: center;
     font-family: Rubik, sans-serif;
     font-size: 16px;
 }
 .grid-item7 {
-    background-color: white;
+     background-color: white;
     border: none;
-    padding: 0px;
+    padding: 30px;
+    margin: 0px;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.grid-item3 .buttons {	
+  display:inline-block;
+text-align:center;
+  position: relative;
+  background-color:white;
+  border-width: 1px;
+  border-radius: 32px;
+  border-color: #f7c702;
+  border-style: solid;
+  height: 42px;
+  width: 79.0312px;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 12px; 
+  font-weight: 600; 
+  letter-spacing: 0.852px;
+}
+
+.grid-item3 .buttons:hover {
+    background-color: #3a3031;
+    color: white;
+}
+.grid-item4 .buttons {	
+  display:inline-block;
+text-align:center;
+  position: relative;
+  background-color:white;
+  border-width: 1px;
+  border-radius: 32px;
+  border-color: #f7c702;
+  border-style: solid;
+  height: 42px;
+  width: 79.0312px;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 12px; 
+  font-weight: 600; 
+  letter-spacing: 0.852px;
+}
+
+.grid-item4 .buttons:hover {
+    background-color: #3a3031;
+    color: white;
+}
+.grid-item7 .buttons {	
+  display:inline-block;
+text-align:center;
+  position: relative;
+  background-color:white;
+  border-width: 1px;
+  border-radius: 32px;
+  border-color: #f7c702;
+  border-style: solid;
+  height: 42px;
+  width: 79.0312px;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 12px; 
+  font-weight: 600; 
+  letter-spacing: 0.852px;
+}
+
+.grid-item7 .buttons:hover {
+    background-color: #3a3031;
+    color: white;
+}
+
+.grid-item8 {
+    background-color: url("../img/blackground.png") no-repeat center / cover;
+    border: none;
+    padding: 40px;
     margin: 0px;
     text-align: center;
     font-family: Rubik, sans-serif;
     font-size: 16px;
 }
-.grid-item8 {
-    background-color: url("../img/blackground.png") no-repeat center / cover;
-    border: none;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-    font-family: Rubik, sans-serif;
-    font-size: 16px;
+.grid-item8 .buttons {	
+  display:inline-block;
+text-align:center;
+  position: relative;
+  background-color:white;
+  background: transparent; 
+  border-width: 1px;
+  border-radius: 32px;
+  border-color:white;
+  border-style: solid;
+  height: 40px;
+  width: 213.594px;
+  padding: 10px;
+  color:white;
+  text-decoration: none;
+  font-size: 12px; 
+  font-weight: 600; 
+  letter-spacing: 0.994px;
+}
+
+.grid-item8 .buttons:hover {
+    background-color: white;
+    color: black;
 }
 
 main .information {
