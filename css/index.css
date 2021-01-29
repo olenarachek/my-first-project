@@ -7,6 +7,44 @@
     border: 0;
 }
 
+@media only screen and (min-width : 480px) {
+body {
+display:block;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+}
+
+@media only screen and (min-width : 768px) {
+body {
+display: block;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+}
+
+@media only screen and (min-width : 992px) {
+body {
+display:block;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+}
+
+@media only screen and (min-width : 1200px) {
+body {
+display:block;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+}
+
 body {
     display:block;
     box-sizing: border-box;
@@ -240,6 +278,7 @@ h2 {
   font-size: 12px; 
   font-weight: 600; 
   letter-spacing: 0.852px;
+  vertical-align: baseline;
 }
 
 .product-card .buttons:hover {
@@ -458,6 +497,8 @@ text-align:center;
 }
 
 main .information {
+    display: inline-flex;
+    box-sizing: border-box;
 background: url("../img/yellowground.png") no-repeat center / cover;
 background-attachment: scroll;
 background-position: bottom center;
@@ -469,6 +510,34 @@ padding-top: 24px;
 padding-bottom: 24px;
 padding-left: 32px;
 padding-right: 32px;
+text-align: left;
+font-size: 40px;
+color: white;
+overflow-wrap: break-word;
+font-weight: 700;
+line-height: 44px;
+vertical-align: baseline;
+}
+.information .buttons {
+    display:block;
+text-align:center;
+  position: relative;
+  background-color:white;
+  border-radius: 32px;
+  height: 60px;
+  width: 500px;
+  padding: 10px;
+  color:black;
+  text-decoration: none;
+  font-size: 16px; 
+  font-weight: 600; 
+  letter-spacing: 1.136px;  
+  line-height: 19.2px;
+  overflow-wrap: break-word;
+}
+.information .buttons:hover {
+    background-color: #3a3031;
+    color: white;
 }
 
 main .gallary {
@@ -537,6 +606,7 @@ padding-right: 32px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     box-sizing: border-box;
+    border:none;
     background-position: 0px 0px;
     height: 100%;
     width: 100%;
@@ -549,13 +619,37 @@ padding-right: 32px;
 }
 .grid-item9 {
     background-color: white;
-    border: none;
+    border: transparent;
     padding: 20px;
     font-size: 30px;
     text-align: center;
     font-family: Rubik, sans-serif;
     font-size: 16px;
 }
+.grid-item9 .buttons {	
+  display:inline-block;
+text-align:center;
+  position: relative;
+  background: transparent; 
+  border-width: 1px;
+  border-radius: 32px;
+  border-color:white;
+  border-style: solid;
+  height: 40px;
+  width: 213.594px;
+  padding: 10px;
+  color:white;
+  text-decoration: none;
+  font-size: 12px; 
+  font-weight: 600; 
+  letter-spacing: 0.994px;
+}
+
+.grid-item9 .buttons:hover {
+    background-color: white;
+    color: black;
+}
+
 .grid-container4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
