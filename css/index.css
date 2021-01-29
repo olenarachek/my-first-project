@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-:root {
-    max-width: 1400px;
-    margin: 0;
-    border: 0;
-}
-
 @media only screen and (min-width : 480px) {
 body {
 display:block;
@@ -50,10 +44,10 @@ body {
     box-sizing: border-box;
     max-width: 1400px;
     height: 100%;
+    padding: 0;
     margin: 0;
 }
 
-@media (min-width: 320px) {
 header {
 background: url("../img/elephant.png") no-repeat center / cover rgba(0, 0, 0, 0.47);
 background-blend-mode: color-dodge;
@@ -73,7 +67,7 @@ padding-right: 32px;
 align-items: center;
 justify-content: space-around;
 }
-}
+
 .navbar-left {
     max-width: 100%;
     position: relative;
@@ -95,9 +89,10 @@ justify-content: space-around;
 .navbar-left :hover {
     text-decoration: none; 
 }
-@media screen and (max-width: 768px) { 
+
+
+@media (max-width: 768px) { 
 #navbarNav {
-    max-width: 100%;
     position: relative;
     margin: auto;
 	height: auto;
@@ -524,8 +519,8 @@ text-align:center;
   position: relative;
   background-color:white;
   border-radius: 32px;
-  height: 60px;
-  width: 500px;
+  height: 53px;
+  width: 350px;
   padding: 10px;
   color:black;
   text-decoration: none;
@@ -599,12 +594,21 @@ padding-bottom: 24px;
 padding-left: 32px;
 padding-right: 32px;
 }
+#comments {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: white;
+}
 
 .grid-container3 {
     display: grid;
     background-color: url("../img/smoke.png") no-repeat center / cover;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+    grid-gap: 20px;
     box-sizing: border-box;
     border:none;
     background-position: 0px 0px;
@@ -626,17 +630,18 @@ padding-right: 32px;
     font-family: Rubik, sans-serif;
     font-size: 16px;
 }
-.grid-item9 .buttons {	
-  display:inline-block;
-text-align:center;
+.reviews .buttons {	
+  display: block;
+  align-items: center;
+  text-align:center;
   position: relative;
-  background: transparent; 
   border-width: 1px;
   border-radius: 32px;
   border-color:white;
   border-style: solid;
   height: 40px;
-  width: 213.594px;
+  width: 150px;
+  margin: auto;
   padding: 10px;
   color:white;
   text-decoration: none;
@@ -644,8 +649,7 @@ text-align:center;
   font-weight: 600; 
   letter-spacing: 0.994px;
 }
-
-.grid-item9 .buttons:hover {
+.reviews .buttons:hover {
     background-color: white;
     color: black;
 }
@@ -666,27 +670,113 @@ text-align:center;
 }
 .grid-item10 {
     border: 20px solid white;
-    padding: 20px;
+    padding: 5px;
     font-size: 30px;
     text-align: center;
     font-family: Rubik, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28.6px;
+}
+.expedition .buttons {	
+  display: block;
+  align-items: center;
+  text-align:center;
+  position: relative;
+  border-width: 1px;
+  border-radius: 32px;
+  background-color: #f7c702;
+  max-width: 100%;
+  height: 35px;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  text-decoration: none;
+  font-family: Rubik, sans-serif;
+  text-transform: uppercase;
+  border-radius: 32px;
+  font-size: 14px; 
+  font-weight: 600; 
+  letter-spacing: 0.994px;
+  height: 40px;
+  width: 150px;
+  margin: auto;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 16px; 
+  font-weight: 600; 
+  letter-spacing: 0.994px;
+}
+.expedition .buttons:hover {
+    background-color: #3a3031;
+    color: white;
+}
+main .aboutus {
+    display: block;
+background: white;
+background-attachment: scroll;
+background-position: bottom center;
+height: 100%;
+width: 100%;
+font-family: 'Rubik', sans-serif;
+margin: 0 auto;
+padding-top: 24px;
+padding-bottom: 24px;
+padding-left: 32px;
+padding-right: 32px;
 }
 
 IMG.displayed {
     display: block;
+    object-fit: cover;
+    object-position: 50% 74.61%;
+    width: 94%;
     margin-left: auto;
     margin-right: auto; }
 
-    P.blocktext {
+    p.blocktext {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 75px;
+    margin-inline-end: 75px;
+    box-sizing: border-box;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    overflow-wrap: break-word;
+    font-family: 'Rubik', sans-serif;
+    padding: 0px;
+}
+main .ourteam {
+display: block;
+background: url("../img/sunset.jpg");
+background-attachment: scroll;
+background-position: bottom center;
+height: 100%;
+width: 100%;
+font-family: 'Rubik', sans-serif;
+margin: 0 auto;
+padding-top: 24px;
+padding-bottom: 24px;
+padding-left: 32px;
+padding-right: 32px;
+}
+#ourteam {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: white;
 }
 .grid-container5 {
     display: grid;
+    background-color: url("../img/sunset.jpg") no-repeat center / cover;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: white;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    box-sizing: border-box;
+    border:none;
     background-position: 0px 0px;
     height: 100%;
     width: 100%;
@@ -698,21 +788,82 @@ IMG.displayed {
     background-attachment: scroll;
 }
 .grid-item11 {
-    border: 20px solid white;
+    object-fit: cover;
+    object-position: 53.876% 15.04%;
+    background-color: white;
+    border: transparent;
     padding: 20px;
     font-size: 30px;
     text-align: center;
     font-family: Rubik, sans-serif;
     font-size: 16px;
 }
+
 .round {
+    display: block;
+    object-fit: cover;
+    object-position: 53.876% 15.04%;
+    text-align: center;
     border-radius: 100px; 
    }
 
+   .container2 {
+       display: flex;
+       align-items: center;
+  justify-content: center;
+   }
+   .ourteam .buttons {	
+  display:inline-block;
+  align-items: center;
+  text-align:center;
+  position: relative;
+  background-color:white;
+  background: transparent; 
+  max-width: 100%;
+  border-width: 1px;
+  border-radius: 32px;
+  border-color:white;
+  border-style: solid;
+  height: 40px;
+  width: 213.594px;
+  padding: 10px;
+  color:white;
+  text-decoration: none;
+  font-size: 12px; 
+  font-weight: 600; 
+  letter-spacing: 0.994px;
+}
+.ourteam .buttons:hover {
+    background-color: white;
+    color: black;
+}
+
+main .steps {
+display: block;
+background: #f7c702;
+background-attachment: scroll;
+background-position: bottom center;
+height: 100%;
+width: 100%;
+font-family: 'Rubik', sans-serif;
+margin: 0 auto;
+padding-top: 24px;
+padding-bottom: 24px;
+padding-left: 32px;
+padding-right: 32px;
+}
+#four-steps {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: white;
+}
 .grid-container6 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    background-color:white;
     background-position: 0px 0px;
     height: 100%;
     width: 100%;
@@ -734,7 +885,10 @@ IMG.displayed {
 .grid-container7 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  background-color: white;
+  background-color: #f7c702;
+  grid-gap: 20px;
+  box-sizing: border-box;
+border:none;
   background-position: 0px 0px;
   height: 100%;
   width: 100%;
@@ -746,9 +900,31 @@ IMG.displayed {
   background-attachment: scroll;
 
 }
+.steps .buttons {	
+  display:inline-block;
+  align-items: center;
+  text-align:center;
+  position: relative;
+  background-color:white;
+  max-width: 100%;
+  border-width: 1px;
+  border-radius: 32px;
+  height: 40px;
+  width: 213.594px;
+  padding: 10px;
+  color:black;
+  text-decoration: none;
+  font-size: 12px; 
+  font-weight: 600; 
+  letter-spacing: 0.994px;
+}
+.steps .buttons:hover {
+    background-color: #3a3031;
+    color: white;
+}
 .grid-item13 {
-  background-color: rgb(247, 199, 2);
-  border: 20px solid white;
+  background-color:white;
+  border: transparent;
   padding: 20px;
   font-size: 30px;
   text-align: center;
@@ -779,29 +955,60 @@ IMG.displayed {
   font-family: Rubik, sans-serif;
   font-size: 16px;
 }
-
-#form_message{
-    display: flexbox;
-    align-items: center;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	border-radius: 5px;
-	margin:10px;
-	padding: 10px;
-	width: 320px;
-    height:330px;
-
+#blog {
+    display: block;    
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: black;
+    font-family: Rubik, sans-serif;
+}
+.blog .buttons {	
+  display:inline-block;
+  align-items: center;
+  text-align:center;
+  position: relative;
+  background-color:white;
+  max-width: 100%;
+  height: 40px;
+  width: 213.594px;
+  padding: 10px;
+  color:black;
+  text-decoration: none;
+  font-size: 12px; 
+  letter-spacing: 0.994px;
 }
 
-#form_message input,textarea{
-	border-radius: 5px;
-    width: 170px;
-    
+.blog .buttons:hover {
+    text-decoration: underline;
 }
 
-#submit{
-	height: 50px;
-	float: center;
+.blog .main-buttons {	
+  display:inline-block;
+  align-items: center;
+  text-align:center;
+  position: relative;
+  background-color:white;
+  border-width: 1px;
+  border-radius: 32px;
+  border-color: #f7c702;
+  border-style: solid;
+  height: 42px;
+  width: 200px;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 12px; 
+  font-weight: 600; 
+  letter-spacing: 0.852px;
 }
+
+.blog .main-buttons:hover {
+    background-color: #3a3031;
+    color: white;
+}
+
 
 @media (min-width: 480px) {
     .grid-container {
@@ -871,6 +1078,50 @@ h2 {
   margin: 0 0 20px;
 }
 
+.carousel {
+    display: flex;
+
+    height: 100%;
+    justify-content: center;
+    padding: auto;
+    margin: auto;
+}
+
+.carousel .container1 {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+}
+footer {
+background: url("../img/blackandwhite.png") no-repeat center / cover;
+background-attachment: scroll;
+background-position: 0px 0px;
+height: 100%;
+width: 100%;
+flex-direction: column;
+cursor: default;
+line-height: 1;
+font-family: 'Rubik', sans-serif;
+margin: 0 auto;
+padding-top: 30px;
+padding-bottom: 140px;
+padding-left: 32px;
+padding-right: 32px;
+align-items: center;
+}
+#contacts {
+    display: block;
+    text-decoration: none;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: white;
+    font-family: Rubik, sans-serif;
+}
+
 .form {
   padding: 30px 40px;
 }
@@ -923,29 +1174,83 @@ h2 {
 
 .form button {
   cursor: pointer;
-  background-color: #3498db;
-  border: 2px solid #3498db;
-  border-radius: 4px;
-  color: #fff;
+  background-color: #f7c702;
+  border: none;
+  border-radius: 30px;
+  color: black;
   display: block;
   font-size: 16px;
   padding: 10px;
   margin-top: 20px;
   width: 100%;
 }
-.carousel {
-    display: flex;
 
-    height: 100%;
-    justify-content: center;
-    padding: auto;
-    margin: auto;
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    border: none;
 }
 
-.carousel .container1 {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: 50%;
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    border: none;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
 }

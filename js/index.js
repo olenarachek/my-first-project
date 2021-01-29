@@ -9,12 +9,12 @@ let currImgIdx = 0;
 
 function showCurrentImage() {
     const imgContainer1 = document.querySelector('.carousel .current-image-1');
-    imgContainer1.src = 'img/' + images[currImgIdx];
     const imgContainer2 = document.querySelector('.carousel .current-image-2');
     image2Idx = currImgIdx + 1 > images.length -1 ? currImgIdx - (images.length - 1) : currImgIdx + 1;
-    imgContainer2.src = 'img/' + images[image2Idx];
     const imgContainer3 = document.querySelector('.carousel .current-image-3');
     image3Idx = currImgIdx + 2 > images.length -1 ? (currImgIdx + 1) - (images.length - 1) : currImgIdx + 2;
+    imgContainer1.src = 'img/' + images[currImgIdx];
+    imgContainer2.src = 'img/' + images[image2Idx];
     imgContainer3.src = 'img/' + images[image3Idx];
 }
 
